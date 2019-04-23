@@ -18,6 +18,9 @@ namespace UnityEngine.Experimental.Rendering
                     case GraphicsDeviceType.Direct3D11:
                     case GraphicsDeviceType.Direct3D12:
                         return SystemInfo.graphicsDeviceType != GraphicsDeviceType.XboxOne;
+
+                    case GraphicsDeviceType.PlayStation4:
+                        return true;
                 }
 
                 return false;
