@@ -38,7 +38,7 @@ Shader "Hidden/HDRP/CameraMotionVectors"
 
             float depth = LoadCameraDepth(input.positionCS.xy);
 
-            PositionInputs posInput = GetPositionInput_Stereo(input.positionCS.xy, _ScreenSize.zw, depth, UNITY_MATRIX_I_VP, UNITY_MATRIX_V, unity_StereoEyeIndex);
+            PositionInputs posInput = GetPositionInput(input.positionCS.xy, _ScreenSize.zw, depth, UNITY_MATRIX_I_VP, UNITY_MATRIX_V);
 
             float4 worldPos = float4(posInput.positionWS, 1.0);
             float4 prevPos = worldPos;
