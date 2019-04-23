@@ -47,7 +47,6 @@ float2 ComputeMotionVec(PositionInputs posInput, float2 sampledMotionVec)
     motionVecCameraRot.y = -motionVecCameraRot.y;
 #endif
 
-    motionVecCameraRot.x = motionVecCameraRot.x * _TextureWidthScaling.y;
     motionVecCameraRot *= 0.5f;
     float2 velWithoutRot = sampledMotionVec - motionVecCameraRot;
     motionVecCameraRot *= _MotionBlurIntensity;

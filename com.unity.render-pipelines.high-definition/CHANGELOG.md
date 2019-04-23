@@ -20,6 +20,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ### Changed
 - Refactor PixelCoordToViewDirWS to be VR compatible and to compute it only once per frame
+- Removed single-pass (double-wide) stereo rendering mode
 
 ## [6.6.0-preview] - 2019-04-01
 
