@@ -3,7 +3,7 @@
     "com.unity.render-pipelines.core": "file:../../../com.unity.render-pipelines.core",
     "com.unity.render-pipelines.lightweight": "file:../../../com.unity.render-pipelines.lightweight",
     "com.unity.shadergraph": "file:../../../com.unity.shadergraph",
-    "com.unity.testframework.graphics": "https://github.cds.internal.unity3d.com/sophia/com.unity.testframework.graphics.git",
+    "com.unity.testframework.graphics": "https://github.cds.internal.unity3d.com/unity/com.unity.testframework.graphics.git",
     "com.unity.modules.animation": "1.0.0",
     "com.unity.modules.assetbundle": "1.0.0",
     "com.unity.modules.audio": "1.0.0",
@@ -24,7 +24,7 @@
   ],
   "lock": {
     "com.unity.testframework.graphics": {
-      "hash": "b326b78de718638600c7ec190e3135a0d57dcea5",
+      "hash": "b0e2026794f5e51fc9e49db4c2e41346ee5e35df",
       "revision": "HEAD"
     }
   }
