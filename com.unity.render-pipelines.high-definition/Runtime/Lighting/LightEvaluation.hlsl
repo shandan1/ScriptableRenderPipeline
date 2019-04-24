@@ -218,7 +218,7 @@ void ModifyDistancesForFillLighting(inout float4 distances, float lightSqRadius)
 // distances = {d, d^2, 1/d, d_proj}
 void GetPunctualLightVectors(float3 positionWS, LightData light, out float3 L, out float3 lightToSample, out float4 distances)
 {
-    lightToSample = positionWS - light.positionRWS;
+    lightToSample = StereoCameraRelativeEyeToCenter(positionWS - light.positionRWS);
     int lightType = light.lightType;
 
     distances.w = dot(lightToSample, light.forward);

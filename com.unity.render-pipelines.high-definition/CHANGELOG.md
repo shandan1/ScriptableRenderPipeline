@@ -17,6 +17,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Fixed exposure to properly support TEXTURE2D_X
 - Fixed TerrainLit basemap texture generation
 - Fixed a bug that caused nans when material classification was enabled and a tile contained one standard material + a material with transmission.
+- Fixed camera-relative issue with punctual lights and XR single-pass instancing
 
 ### Changed
 - Refactor PixelCoordToViewDirWS to be VR compatible and to compute it only once per frame
