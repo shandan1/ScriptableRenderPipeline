@@ -267,7 +267,7 @@ namespace UnityEditor.Experimental.Rendering
 
         // Same as Gizmo.DrawFrustum except that when aspect is below one, fov represent fovX instead of fovY
         // Use to match our light frustum pyramid behavior
-        public static void DrawSphereProtionWireframe(Vector4 aspectFovMaxRangeMinRange, float distanceTruncPlane = 0f)
+        public static void DrawSpherePortionWireframe(Vector4 aspectFovMaxRangeMinRange, float distanceTruncPlane = 0f)
         {
             float aspect = aspectFovMaxRangeMinRange.x;
             float fov = aspectFovMaxRangeMinRange.y;
@@ -451,7 +451,7 @@ namespace UnityEditor.Experimental.Rendering
             return new Vector4(aspect, fov, maxRange, minRange);
         }
 
-        public static Vector4 DrawSphereProtionHandle(Vector4 aspectFovMaxRangeMinRange, bool useNearPlane, float minAspect = 0.05f, float maxAspect = 20f, float minFov = 1f)
+        public static Vector4 DrawSpherePortionHandle(Vector4 aspectFovMaxRangeMinRange, bool useNearPlane, float minAspect = 0.05f, float maxAspect = 20f, float minFov = 1f)
         {
             float aspect = aspectFovMaxRangeMinRange.x;
             float fov = aspectFovMaxRangeMinRange.y;
