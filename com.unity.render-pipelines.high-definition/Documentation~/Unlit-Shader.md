@@ -18,7 +18,7 @@ New Materials in HDRP use the [Lit Shader](Lit-Shader.html) by default. To creat
 
 ### Surface Options
 
-Surface options control the overall look of your Material's surface and how Unity renders the Material on screen. 
+Surface options control the overall look of your Material's surface and how Unity renders the Material on screen.
 
 | Property| Description |
 |:---|:---|

@@ -11,13 +11,13 @@ To create a new Light Gameobject:
 1. In the Unity Editor, go to **GameObject > Light**
 2. Select the Light type you want to add.
 
-Unity creates a new GameObject and attaches a Light component, as well as two other High Definition Render Pipeline (HDRP) components: **HD Additional Light Data** and **Additional Shadow Data**. Unity places the new Light GameObject into your Scene, centered on your current view in the Scene window.
+Unity creates a new GameObject and attaches a Light component, as well as two other High Definition Render Pipeline (HDRP) components: **HD Additional Light Data** and **HD Additional Shadow Data**. Unity places the new Light GameObject into your Scene, centered on your current view in the Scene window.
 
 To add a Light component to an existing GameObject:
 
 1. Select the GameObject you want to add a Light.
 2.  In the Inspector, click **Add Component**.
-3. Go to the **Rendering** section, and click **Light**. This creates a new Light source and attaches it to the currently selected GameObject. It also adds the **HD Additional Light Data** and **Additional Shadow Data** HDRP components.
+3. Go to the **Rendering** section, and click **Light**. This creates a new Light source and attaches it to the currently selected GameObject. It also adds the **HD Additional Light Data** and **HD Additional Shadow Data** HDRP components.
 
 Alternatively, you can search for “Light” in the **Add Component** window, then click **Light** to add the Light component.
 
@@ -121,7 +121,7 @@ These settings define the area this Light affects. Each Light **Type** has its o
 | ------------ | ------------------------------------------------------------ |
 | **Length**   | Defines the length of the Tube Light. The center of the Light is the Transform Position and the Light itself extends out from the center symmetrically. The **Length** is the distance from one end of the tube to the other. |
 
-<a name=”EmissionProperties”></a>
+<a name="EmissionProperties"></a>
 
 ### **Emission**
 
@@ -177,7 +177,7 @@ These settings define the volumetric behavior of this Light. Alter these setting
 
 ### **Shadows**
 
-Use the Shadows section to adjust the Shadows cast by this Light. HDRP currently does not support shadowing for **Rectangle** and **Tube** Lights. Because of this, Unity does not expose the **Shadows** drop-down section in the Inspector when you select either of these two **Types**. The Light **Types** that HDRP does support shadowing for (**Spot**, **Directional**, and **Point**) share almost all of their properties.
+Use the Shadows section to adjust the Shadows cast by this Light. HDRP currently does not support shadowing **Tube** Lights. Because of this, Unity does not expose the **Shadows** drop-down section in the Inspector when you select either of this **Type**. The Light **Types** that HDRP does support shadowing for (**Spot**, **Directional**, and **Point**) share almost all of their properties.
 
 Unity exposes extra properties in the **Shadows** section depending on the **Mode** you set in the [General](#GeneralProperties) section. It also exposes extra properties depending on the **Filtering Quality** set in your Unity Project’s [HDRP Asset](HDRP-Asset.html). To change the **Filtering Quality** property, navigate to your Project’s **HDRP Asset > Shadows** and use the **Filtering Quality** drop-down  to select the shadow filtering mode. Setting **Filtering Quality** to **High** or **Very High** exposes extra properties in the Light Inspector’s **Shadow** drop-down section. For more information on shadow filtering in HDRP, see the documentation on [Shadow Filtering](Shadows-in-HDRP.html#ShadowFiltering)
 
