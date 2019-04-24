@@ -22,7 +22,7 @@ Using the Inspector allows you to change all of the Decal Projector properties, 
 
 | **Property**              | **Description**                                              |
 | ------------------------- | ------------------------------------------------------------ |
-| **Crop Decal With Gizmo** | Enable this checkbox to crop the decal with the Scene view gizmo, rather than alter the projector’s size. |
+| **Crop Decal With Gizmo** | Enable the checkbox to crop the decal with the Scene view gizmo, rather than alter the projector’s size. |
 | **Size**                  | The 3D size of the projector influence box, and thus the decal. The projector scales the decal to match the **X** and **Z** components of the **Size**. The Decal Projector component projects decals along the local y-axis. |
 | **Material**              | The decal Material to project. The decal Material must use a HDRP/Decal Shader. |
 | **Draw Distance**         | The distance from the Camera to the Decal at which this projector stops projecting the decal and HDRP no longer renders the decal. |
@@ -30,4 +30,4 @@ Using the Inspector allows you to change all of the Decal Projector properties, 
 | **UV Scale**              | Scales the decal Material along its UV axes.                 |
 | **UV Bias**               | Offsets the decal Material along its UV axes. Use this with the **UV Scale** when using a Material atlas for your decal. |
 | **Fade Factor**           | Allows you to manually fade the decal in and out. A value of 0 makes the decal fully transparent, and a value of 1 makes the decal as opaque as defined by the **Material**. The **Material** manages the maximum opacity of the decal using **Global Opacity** and an opacity map. |
-| **Transparent Surfaces**  | Enable this checkbox to allow HDRP to draw the projector’s decal on top of transparent surfaces. HDRP packs all Textures from decals with **Affects Transparency** enabled into an atlas, which can affect memory and performance. You can edit the dimensions of this atlas in the **Decals** section of your Unity Project’s [HDRP Asset](HDRP-Asset.html#Decals). |
+| **Transparent Surfaces**  | Enable the checkbox to allow HDRP to draw the projector’s decal on top of transparent surfaces. HDRP packs all Textures from decals with **Affects Transparency** enabled into an atlas, which can affect memory and performance. You can edit the dimensions of this atlas in the **Decals** section of your Unity Project’s [HDRP Asset](HDRP-Asset.html#Decals). |
